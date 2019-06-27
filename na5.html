@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prueba JavaScript</h1>
+
+
+
+
+    <script>
+        var peso = parseFloat(prompt("Ingrese su peso en (kg): "));
+        var altura= parseFloat(prompt("Ingrese su estatura (m): "))
+        
+        var imc;
+
+        imc = peso/(altura*altura);
+
+        document.write("<p> Su peso es de: "+ peso+"</p>")
+        document.write("<p> Su altura es de: "+ altura+"</p>")
+        document.write("<p> Indice de masa corporal es de: "+ imc+"</p>")
+
+
+        function evaluacion(imc){
+            if(imc<18.5){
+                document.write("Estas bajo de peso");
+            }
+            if(imc>=18.5 && imc<=24.9){
+                document.write("Estas bien de peso");
+            }
+            if(imc>=25 && imc<=29.9){
+                document.write("Estas en sobre peso");
+            }
+            if(imc>=30 && imc<=34.9){
+                document.write("Estas obesidad I");
+            }
+            if(imc>=35 && imc<=39.9){
+                document.write("Estas obesidad II");
+            }
+            if(imc>=40 && imc<=49.9){
+                document.write("Estas obesidad III");
+            }
+            if(imc>50){
+                document.write("Estas obesidad IV");
+            }
+        }
+
+        evaluacion(imc);
+    
+    
+    
+    </script>
+</body>
+</html>

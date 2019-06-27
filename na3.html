@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prueba JavaScript</h1>
+
+
+
+
+    <script>
+        var numero = parseInt(prompt("Ingrese un numero: "))
+
+        function mult(numero){
+            document.writeln("Tabla de multiplicar de "+ numero);
+            for (x=0; x<=10; x++){
+            
+            document.writeln("");
+            document.writeln("<p>"+ numero+ " x " + x + " = "+ (numero*x)+"</p>");
+            
+            }
+        }
+
+        function factorial(numero){
+            var fac=1;
+            for (x=1;x<=numero;x++){
+                fac=fac*x;
+                
+            }
+            document.write(fac);
+        }
+        
+        factorial(numero);
+        
+    
+    
+    
+    </script>
+</body>
+</html>
